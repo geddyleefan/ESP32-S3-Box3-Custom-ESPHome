@@ -12,8 +12,7 @@ Changes in `s3b-2026.yaml` (tested to compile on ESPHome 2026.10.0):
 - Wi-Fi credentials come from `secrets.yaml`. Copy `secrets.yaml.example` to `secrets.yaml` to set them up.
 - The display still uses `ili9xxx`, which is deprecated in favour of `mipi_spi` but still works. It was not switched because the change could not be checked on hardware.
 
-
-And please consider supporting BigBobbas too (his button is further down this page) ❤️
+If you find this useful, please consider supporting BigBobbas (his button is further down this page) ❤️
 
 ---
 
@@ -48,7 +47,6 @@ The following features are now included with the latest version of this configur
 - Voice assistant with switchable 'on device' wake word or Home Assistant wakeword engine eg. Openwakeword
 
 There are also some settings that can be changed within the config and these can be found at the very top under the `substitutions:` section more details of these can be found in the 'how to customise' Guide [click here](<https://github.com/BigBobbas/ESP32-S3-Box3-Custom-ESPHome/blob/main/instructions/make%20it%20your%20own.md>)<BR>
-
 
 To go straight to the web installer page [click here](<https://support.bbdl.co.uk>)<br>
  
