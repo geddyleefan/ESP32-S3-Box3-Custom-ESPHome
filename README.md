@@ -1,3 +1,19 @@
+# Maintained fork: `s3b-2026.yaml` for ESPHome 2026.10+
+
+This is a maintained fork of [BigBobbas/ESP32-S3-Box3-Custom-ESPHome](https://github.com/BigBobbas/ESP32-S3-Box3-Custom-ESPHome). All credit for the original firmware, artwork and design goes to **BigBobbas**. The original `s3b.yaml` is unchanged. The updated config is **`s3b-2026.yaml`**.
+
+Changes in `s3b-2026.yaml` (tested to compile on ESPHome 2026.10.0):
+- Voice replies fixed. The audio path now matches the official ESPHome Box-3 config: a single i2s speaker with no mixer/resampler, which removes the crackling and silent-reply problems. The external-media-player workaround has been removed.
+- Temperature is shown in **°F**.
+- `select.state` has been replaced with `current_option()`, as ESPHome 2026.x requires.
+- `image:` uses the new `- platform: file` list format.
+- Entity names that contained `/` (for example "Scr/save delay") now use the fraction slash `⁄` (for example "Scr⁄save delay"). This avoids the new ESPHome warning about `/` in names while keeping the Home Assistant entity IDs the same.
+- Remote assets are loaded from this fork.
+- Wi-Fi credentials come from `secrets.yaml`. Copy `secrets.yaml.example` to `secrets.yaml` to set them up.
+- The display still uses `ili9xxx`, which is deprecated in favour of `mipi_spi` but still works. It was not switched because the change could not be checked on hardware.
+
+---
+
 # ESP32-S3-Box3-Custom Firmware
 # The S3 BOX 3  is not just a voice assistant... it can do so much more!! 
 Video demo available [HERE](<https://youtu.be/5W52TOQU_oM>)
