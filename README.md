@@ -12,6 +12,11 @@ Changes in `s3b-2026.yaml` (tested to compile on ESPHome 2026.10.0):
 - Wi-Fi credentials come from `secrets.yaml`. Copy `secrets.yaml.example` to `secrets.yaml` to set them up.
 - The display still uses `ili9xxx`, which is deprecated in favour of `mipi_spi` but still works. It was not switched because the change could not be checked on hardware.
 
+If this fork saved you some headaches and you'd like to buy the maintainer a coffee:<br>
+<a href="https://www.buymeacoffee.com/geddyleefan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+And please consider supporting BigBobbas too (his button is further down this page) ❤️
+
 ---
 
 # ESP32-S3-Box3-Custom Firmware
